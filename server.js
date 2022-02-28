@@ -15,8 +15,8 @@ app.use('/column', addColumnRouter)
 const deleteColumnRouter = require('./routes/deleteColumn')
 app.use('/column/delete', deleteColumnRouter)
 
-// const addRowRouter = require('./routes/rowRouter')
-// app.use('/row')
+const addRowRouter = require('./routes/rowRouter')
+app.use('/row',addRowRouter)
 
 const deleteRowRouter = require('./routes/deleteRow')
 app.use('/row/delete', deleteRowRouter)
